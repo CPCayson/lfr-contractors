@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFR Contractors - Building With Integrity Since 1985</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00a9ce 0%, #0088aa 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            background-color: #c41e3a;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .license-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #00a9ce 0%, #0077aa 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #c41e3a;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #a01729;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 2rem;
+            background-color: #f8f9fa;
+        }
+
+        .services-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #0088aa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #0088aa;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #0088aa;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+
+        .credentials {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .credential-badge {
+            background: linear-gradient(135deg, #00a9ce 0%, #0088aa 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+        }
+
+        .phone-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            color: #00a9ce;
+        }
+
+        .phone-link {
+            color: #00a9ce;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .phone-link:hover {
+            color: #00d4ff;
+        }
+
+        .free-estimates {
+            background-color: #c41e3a;
+            display: inline-block;
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #999;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .license-info {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            .logo-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .phone-number {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <h1>LFR CONTRACTORS</h1>
+                <div class="tagline">BUILDING WITH INTEGRITY SINCE 1985</div>
+            </div>
+            <div class="license-info">
+                <div>MS #19004, LA #555 826</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Home Inspection Repairs and Construction Services</h2>
+            <p>A one-stop shop for all of your building and home inspection repairs. Make one call – we do it all.</p>
+            <a href="tel:228-344-4300" class="cta-button">Call (228) 344-4300</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Foundation Repair</h3>
+                    <p>Expert foundation repair services to ensure the structural integrity of your home. We diagnose and fix all foundation issues with precision and care.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Plumbing</h3>
+                    <p>Complete plumbing solutions from repairs to installations. Our licensed plumbers handle everything from leaks to full system upgrades.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Electrical</h3>
+                    <p>Safe and reliable electrical services for residential and commercial properties. From wiring to panel upgrades, we've got you covered.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Roofing</h3>
+                    <p>Professional roofing services including repairs, replacements, and inspections. We protect your investment with quality workmanship.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Carpentry</h3>
+                    <p>Skilled carpentry work for all your construction and renovation needs. Custom builds, repairs, and installations done right.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Painting & Finishing Touches</h3>
+                    <p>Interior and exterior painting services to give your property a fresh, polished look. Attention to detail in every brushstroke.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2>Building With Integrity Since 1985</h2>
+            <p>LFR Contractors has been serving the community for nearly four decades with commitment to quality, integrity, and customer satisfaction. Our experienced team handles all aspects of home inspection repairs and construction services, making us your one-stop solution for all building needs.</p>
+            <div class="credentials">
+                <div class="credential-badge">LICENSED</div>
+                <div class="credential-badge">BONDED</div>
+                <div class="credential-badge">INSURED</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-content">
+            <h2>Make One Call – We Do It All</h2>
+            <div class="contact-info">
+                <div class="phone-number">
+                    <a href="tel:228-344-4300" class="phone-link">(228) 344-4300</a>
+                </div>
+                <div class="free-estimates">FREE ESTIMATES</div>
+            </div>
+            <p style="margin-top: 2rem; font-size: 1.1rem;">Contact us today to discuss your project and receive a complimentary estimate.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LFR Contractors. All rights reserved. | MS #19004, LA #555 826</p>
+        <p>Licensed, Bonded & Insured</p>
+    </footer>
+</body>
+</html>

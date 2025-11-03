@@ -1,0 +1,20 @@
+{
+  "name": "lfr-contractors-website",
+  "version": "1.0.0",
+  "description": "Professional website for LFR Contractors - Building With Integrity Since 1985",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "echo 'Push to GitHub - Netlify will auto-deploy'"
+  },
+  "keywords": [
+    "contractors",
+    "construction",
+    "home-repair",
+    "mississippi",
+    "louisiana"
+  ],
+  "author": "LFR Contractors",
+  "license": "UNLICENSED",
+  "private": true
+}
