@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-site-url.netlify.app/sitemap.xml
+Sitemap: https://lfr-contractors.netlify.app/sitemap.xml
