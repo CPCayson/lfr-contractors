@@ -2,6 +2,24 @@
   publish = "."
   command = "echo 'No build command needed'"
 
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Content-Type = "image/png"
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/og-image.jpg"
+  [headers.values]
+    Content-Type = "image/jpeg"
+    Cache-Control = "public, max-age=31536000"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
