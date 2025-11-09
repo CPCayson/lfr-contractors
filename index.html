@@ -39,6 +39,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
+    <!-- Google Analytics 4 -->
+    <!-- Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLKF8E5L1F"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NLKF8E5L1F');
+</script>
+    
     <!-- Schema.org Markup for Local Business -->
     <script type="application/ld+json">
     {
@@ -454,7 +464,7 @@
         <div class="hero-content">
             <h2>Home Inspection Repairs and Construction Services</h2>
             <p>A one-stop shop for all of your building and home inspection repairs. Make one call – we do it all.</p>
-            <a href="tel:228-344-4300" class="cta-button" aria-label="Call LFR Contractors">Call (228) 344-4300</a>
+            <a href="tel:228-344-4300" class="cta-button" aria-label="Call LFR Contractors" onclick="gtag('event', 'phone_call_click', {'event_category': 'contact', 'event_label': 'hero_cta_button', 'value': 1});">Call (228) 344-4300</a>
         </div>
     </section>
 
@@ -510,7 +520,7 @@
             <h2>Make One Call – We Do It All</h2>
             <div class="contact-info">
                 <div class="phone-number">
-                    <a href="tel:228-344-4300" class="phone-link" aria-label="Call LFR Contractors at 228-344-4300">(228) 344-4300</a>
+                    <a href="tel:228-344-4300" class="phone-link" aria-label="Call LFR Contractors at 228-344-4300" onclick="gtag('event', 'phone_call_click', {'event_category': 'contact', 'event_label': 'contact_section_phone', 'value': 1});">(228) 344-4300</a>
                 </div>
                 <div class="free-estimates">FREE ESTIMATES</div>
             </div>

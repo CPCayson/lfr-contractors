@@ -10,7 +10,13 @@ Professional website for LFR Contractors with **advanced SEO optimization** for 
 - **Keywords Meta**: Targeted local contractor keywords
 - **Geo Tags**: Location-specific tags for Mississippi/Louisiana
 
-### 2. **Schema Markup (Structured Data)** ✅
+### 2. **Phone Call Tracking** ✅ 📞
+- **Google Analytics 4** integrated for call tracking
+- Tracks: clicks, device type, time of day, location
+- See GOOGLE_ANALYTICS_SETUP.md for full guide
+- **Two tracking points**: Hero button + Contact section
+
+### 3. **Schema Markup (Structured Data)** ✅
 Tells Google exactly what your business is:
 - **GeneralContractor schema** - Business type
 - **Address & Phone** - Contact information
